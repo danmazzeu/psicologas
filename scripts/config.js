@@ -1,10 +1,15 @@
-const titleName = 'Bianca Macedo';
-const phone = '+55' + '16997989601';
+// Variables
+const titleName = 'Nome Sobrenome';
+const crpNumber = '00/000000';
+const phone = '+55' + '11111111111';
 const instagram = '';
 const message = 'Olá, gostaria de agendar uma avaliação.';
+
+// Elements
 const wpplinks = document.querySelectorAll('a.whatsapp');
 const instalinks = document.querySelectorAll('a.instagram');
 const client = document.getElementById("client");
+const crp = document.getElementById("crp");
 
 // Whatsapp Generate
 function whatsappGenerate(numero, mensagem) {
@@ -27,6 +32,7 @@ instalinks.forEach(link => {
 // Title
 document.title = titleName;
 client.textContent = titleName;
+crp.textContent = crpNumber;
 
 // Metatags
 const newKeywords = "palavra-chave1, palavra-chave2, palavra-chave3";
@@ -50,3 +56,9 @@ const ogImage = document.querySelector('meta[property="og:image"]');
 ogTitle.content = newOgTitle;
 ogDescription.content = newOgDescription;
 ogImage.content = newOgImage;
+
+// Current Year Footer
+const currentYear = document.getElementById("current-year");
+const year = new Date().getFullYear();
+
+currentYear.innerHTML = year;

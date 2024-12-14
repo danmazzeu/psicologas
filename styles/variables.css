@@ -5,6 +5,8 @@
     --secondary-color: #555 !important;
     --tertiary-color: #999 !important;
     --stars-color: #fcba03 !important;
+    --instagram-color: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+    --whatsapp-color: #128c7e !important;
 
     /* Global Setup */
     --border-radius: 15px;

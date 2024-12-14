@@ -30,15 +30,16 @@
         <link rel="stylesheet" href="styles/protected.css">
         <link rel="stylesheet" href="styles/grid.css">
         <link rel="stylesheet" href="styles/gap.css">
-        <link rel="stylesheet" href="styles/card.css">
-        <link rel="stylesheet" href="styles/list.css">
-        <link rel="stylesheet" href="styles/images.css">
         <link rel="stylesheet" href="styles/typography.css">
         <link rel="stylesheet" href="styles/animations.css">
         <link rel="stylesheet" href="styles/colors.css">
         <link rel="stylesheet" href="styles/margin.css">
+        <link rel="stylesheet" href="styles/card.css">
+        <link rel="stylesheet" href="styles/list.css">
+        <link rel="stylesheet" href="styles/images.css">
         <link rel="stylesheet" href="styles/container.css">
         <link rel="stylesheet" href="styles/nav.css">
+        <link rel="stylesheet" href="styles/link.css">
         <link rel="stylesheet" href="styles/button.css">
 
         <!-- Scrpts -->
@@ -49,15 +50,15 @@
 
         <!-- Nav -->
         <nav class="protected">
-            <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram ts-35 ta-center theme-color"></i></a>
-            <a href="#" class="whatsapp" target="_blank"><i class="bi bi-whatsapp ts-35 ta-center theme-color"></i></a>
+            <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram ts-30 ta-center instagram-color"></i></a>
+            <a href="#" class="whatsapp" target="_blank"><i class="bi bi-whatsapp ts-30 ta-center whatsapp-color"></i></a>
         </nav>
 
         <!-- Header -->
         <header class="container mb-50 mt-40 protected">
             <section class="grid grid-1 gap-10">
                 <h1 id="client" class="ts-55 tw-400 lh-50 ta-center theme-color t-special">Nome Sobrenome</h1>
-                <p class="ts-18 ta-center tw-400 secondary-color">CRP 06/194178</p>
+                <p id="crp" class="ts-18 ta-center tw-400 secondary-color">CRP 00/000000</p>
             </section>
         </header>
 
@@ -176,12 +177,16 @@
             <section class="grid grid-1 gap-15 mt-20">
                 <p class="ts-25 tt-upper ta-center tw-300 tertiary-color">Agendamento</p>
             </section>
-            <section class="grid grid-1 mb-80">
+            <section class="grid grid-1">
                 <div class="card">
                     <h2 class="ts-25 tw-600 tt-upper primary-color"><i class="bi bi-calendar-check-fill ts-25 mr-10 theme-color animation-bounce"></i>Agende uma avaliação</h2>
                     <p class="ts-18 tw-300 lh-30">Agende agora mesmo uma avaliação presencial, por telefone ou até mesmo online e descubra os benefícios que a psicoterapia pode ter em sua vida.</p>
                     <a href="#" class="button ts-15 tt-upper tw-400 ls-2 whatsapp" target="_blank">Agendar uma avaliação</a>
                 </div>
+            </section>
+            <section class="grid grid-1 gap-5 mt-50 mb-50">
+                <p class="ts-14 ta-center tw-300 tertiary-color">Elaborado e desenvolvido por <a href="https://wa.me/5516992502611" target="_blank">Daniel Mazzeu</a>.</p>
+                <p class="ts-14 ta-center tw-300 tertiary-color">Todos os direitos reservados <span id="current-year"></span>.</p>
             </section>
         </main>
         
