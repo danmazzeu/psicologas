@@ -3,9 +3,5 @@ a:visited {
     color: var(--theme-color);
     font-weight: 500;
     transition: var(--transition);
-}
-
-a:active,
-a:hover {
     text-decoration: underline !important;
 }
