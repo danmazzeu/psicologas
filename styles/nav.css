@@ -3,6 +3,16 @@ nav {
     bottom: 35px;
     right: 35px;
     z-index: 5;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
 }
   
-nav i { cursor: pointer; }
+nav i { 
+    cursor: pointer; 
+    line-height: 0;
+}

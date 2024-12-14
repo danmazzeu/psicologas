@@ -1,20 +1,30 @@
-const titleName = 'Daniel Mazzeu Teste';
-const phone = '+55' + '11987654321';
+const titleName = 'Andreza Gaspar';
+const phone = '+55' + '16997221147';
+const instagram = 'psicologa.andrezagaspar';
 const message = 'Olá, gostaria de agendar uma avaliação.';
-const links = document.querySelectorAll('a.whatsapp');
+const wpplinks = document.querySelectorAll('a.whatsapp');
+const instalinks = document.querySelectorAll('a.instagram');
 const client = document.getElementById("client");
 
-// Whatsapp Links
-function generate(numero, mensagem) {
+// Whatsapp Generate
+function whatsappGenerate(numero, mensagem) {
     return `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 }
-
-// Title
-links.forEach(link => {
-    const newLink = generate(phone, message);
+wpplinks.forEach(link => {
+    const newLink = whatsappGenerate(phone, message);
     link.href = newLink;
 });
 
+// Instagram Generate
+function instagramGenerate(instagram) {
+    return `https://www.instagram.com/${instagram}`;
+}
+instalinks.forEach(link => {
+    const newLink = instagramGenerate(instagram);
+    link.href = newLink;
+});
+
+// Title
 document.title = titleName;
 client.textContent = titleName;
 
