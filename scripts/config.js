@@ -1,6 +1,6 @@
 // Variables
 const titleName = 'Nome Sobrenome';
-const crpNumber = '00/000000';
+const crpNumber = 'CRP ' + '00/000000';
 const linkedin = '';
 const whatsapp = '+55' + '11111111111';
 const instagram = '';
