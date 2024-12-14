@@ -1,5 +1,5 @@
-a,
-a:visited {
+.link,
+.link:visited {
     color: var(--theme-color);
     font-weight: 500;
     transition: var(--transition);
