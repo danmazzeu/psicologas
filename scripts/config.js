@@ -1,22 +1,33 @@
 // Variables
 const titleName = 'Nome Sobrenome';
 const crpNumber = '00/000000';
-const phone = '+55' + '11111111111';
+const linkedin = '';
+const whatsapp = '+55' + '11111111111';
 const instagram = '';
 const message = 'Olá, gostaria de agendar uma avaliação.';
 
 // Elements
+const linkedinlinks = document.querySelectorAll('a.linkedin');
 const wpplinks = document.querySelectorAll('a.whatsapp');
 const instalinks = document.querySelectorAll('a.instagram');
 const client = document.getElementById("client");
 const crp = document.getElementById("crp");
 
+// Linkedin Generate
+function linkedInGenerate(linkedin) {
+    return `https://br.linkedin.com/in/${linkedin}`;
+}
+linkedinlinks.forEach(link => {
+    const newLink = linkedInGenerate(linkedin);
+    link.href = newLink;
+});
+
 // Whatsapp Generate
-function whatsappGenerate(numero, mensagem) {
-    return `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+function whatsappGenerate(whatsapp, message) {
+    return `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
 }
 wpplinks.forEach(link => {
-    const newLink = whatsappGenerate(phone, message);
+    const newLink = whatsappGenerate(whatsapp, message);
     link.href = newLink;
 });
 
