@@ -8,7 +8,7 @@ nav {
     flex-direction: column;
     gap: 20px;
     border-radius: var(--border-radius);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: var(--box-shadow);
 }
   
