@@ -75,11 +75,11 @@ const year = new Date().getFullYear();
 currentYear.innerHTML = year;
 
 // Animated Scroll
-const elements = document.querySelectorAll('.animated-scroll');
+const animateds = document.querySelectorAll('.animated-scroll');
 
 const reveal = () => {
-    for (let i = 0; i < elements.length; i++) {
-        const element = elements[i];
+    for (let i = 0; i < animateds.length; i++) {
+        const element = animateds[i];
         let position = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 

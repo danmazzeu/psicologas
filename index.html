@@ -190,27 +190,6 @@
                 <p class="ts-14 ta-center tw-300 tertiary-color">Todos os direitos reservados <span id="current-year"></span>.</p>
             </section>
         </main>
-
-        <script defer>
-            const elements = document.querySelectorAll('.animated-scroll');
-            
-            const reveal = () => {
-            for (let i = 0; i < elements.length; i++) {
-                const element = elements[i];
-                let position = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-            
-                if (position < windowHeight - 200) {
-                    element.classList.add('show');
-                } else {
-                    element.classList.remove('show');
-                }
-            }
-            };
-            
-            window.addEventListener('scroll', reveal);
-            reveal();
-                    </script>
         
     </body>
 </html>
