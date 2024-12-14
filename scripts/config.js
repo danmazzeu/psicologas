@@ -73,3 +73,23 @@ const currentYear = document.getElementById("current-year");
 const year = new Date().getFullYear();
 
 currentYear.innerHTML = year;
+
+// Animated Scroll
+const elements = document.querySelectorAll('.animated-scroll');
+
+const reveal = () => {
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        let position = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (position < windowHeight - 200) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
+    }
+};
+
+window.addEventListener('scroll', reveal);
+reveal();

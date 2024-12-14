@@ -56,8 +56,8 @@
         </nav>
 
         <!-- Header -->
-        <header class="container mb-50 mt-40 protected">
-            <section class="grid grid-1 gap-10">
+        <header class="container mb-50 mt-40 protected ">
+            <section class="grid grid-1 gap-10 animated-scroll">
                 <h1 id="client" class="ts-55 tw-400 lh-50 ta-center theme-color ff-sacramento">Nome Sobrenome</h1>
                 <p id="crp" class="ts-18 ta-center tw-400 secondary-color">CRP 00/000000</p>
             </section>
@@ -65,7 +65,7 @@
 
         <!-- Main -->
         <main class="container protected">
-            <section class="grid grid-2 gap-15">
+            <section class="grid grid-2 gap-15 animated-scroll">
                 <div class="card" style="background-image: url('images/presentation.jpg'); min-height: 300px;"></div>
                 <div class="card">
                     <h2 class="ts-25 tw-600 tt-upper primary-color"><i class="bi bi-chat-text ts-25 mr-10 theme-color animation-bounce"></i>Sobre mim</h2>
@@ -78,10 +78,10 @@
                     <a href="#" class="button ts-15 tt-upper tw-400 ls-2 mt-10 whatsapp" target="_blank">Agendar uma avaliação</a>
                 </div>
             </section>
-            <section class="grid grid-1 gap-15 mt-20">
+            <section class="grid grid-1 gap-15 mt-20 animated-scroll">
                 <p class="ts-25 tt-upper ta-center tw-300 tertiary-color">Serviços</p>
             </section>
-            <section class="grid grid-4 gap-15">
+            <section class="grid grid-4 gap-15 animated-scroll">
                 <div class="card">
                     <h3 class="ts-18 tw-600 tt-upper lh-25 primary-color"><i class="bi bi-patch-check-fill ts-20 mr-10 theme-color animation-bounce"></i>Terapia individual</h3>
                     <p class="ts-18 tw-300 lh-25">Através de sessões regulares, a psicóloga oferece um espaço seguro e confidencial para que o paciente explore seus pensamentos, sentimentos e comportamentos, buscando compreender as raízes de seus problemas e desenvolver estratégias para lidar com eles.</p>
@@ -107,18 +107,18 @@
                     <p class="ts-18 tw-300 lh-25">A psicologia positiva utiliza diversas técnicas, como mindfulness, gratidão e construção de objetivos, para ajudar as pessoas a desenvolverem uma visão mais otimista da vida e a aumentar sua satisfação pessoal.</p>
                 </div>
             </section>
-            <section class="grid grid-1 gap-15 mt-20">
+            <section class="grid grid-1 gap-15 mt-20 animated-scroll">
                 <p class="ts-25 tt-upper ta-center tw-300 tertiary-color">Ambiente</p>
             </section>
-            <section class="grid grid-3 gap-15">
+            <section class="grid grid-3 gap-15 animated-scroll">
                 <img src="images/environment.jpg" alt="Primeira imagem do ambiente">
                 <img src="images/environment.jpg" alt="Primeira imagem do ambiente">
                 <img src="images/environment.jpg" alt="Primeira imagem do ambiente">
             </section>
-            <section class="grid grid-1 gap-15 mt-20">
+            <section class="grid grid-1 gap-15 mt-20 animated-scroll">
                 <p class="ts-25 tt-upper ta-center tw-300 tertiary-color">Depoimentos</p>
             </section>
-            <section class="grid grid-4 gap-15">
+            <section class="grid grid-4 gap-15 animated-scroll">
                 <div class="card">
                     <h3 class="ts-18 tw-600 tt-upper lh-25"><i class="bi bi-chat-heart-fill ts-20 mr-10 theme-color animation-bounce"></i>Maria A. B.</h3>
                     <div>
@@ -175,10 +175,10 @@
                     <p class="ts-18 tw-300 lh-25 tt-italic">"A terapia me ajudou a encontrar um propósito na minha vida e a me sentir mais realizado. A psicóloga me ajudou a descobrir minhas paixões e a traçar um caminho para o futuro."</p>
                 </div>
             </section>
-            <section class="grid grid-1 gap-15 mt-20">
+            <section class="grid grid-1 gap-15 mt-20 animated-scroll">
                 <p class="ts-25 tt-upper ta-center tw-300 tertiary-color">Agendamento</p>
             </section>
-            <section class="grid grid-1">
+            <section class="grid grid-1 animated-scroll">
                 <div class="card">
                     <h2 class="ts-25 tw-600 tt-upper primary-color"><i class="bi bi-calendar-check-fill ts-25 mr-10 theme-color animation-bounce"></i>Agende uma avaliação</h2>
                     <p class="ts-18 tw-300 lh-30">Agende agora mesmo uma avaliação presencial, por telefone ou até mesmo online e descubra os benefícios que a psicoterapia pode ter em sua vida.</p>
@@ -190,6 +190,27 @@
                 <p class="ts-14 ta-center tw-300 tertiary-color">Todos os direitos reservados <span id="current-year"></span>.</p>
             </section>
         </main>
+
+        <script defer>
+            const elements = document.querySelectorAll('.animated-scroll');
+            
+            const reveal = () => {
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+                let position = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+            
+                if (position < windowHeight - 200) {
+                    element.classList.add('show');
+                } else {
+                    element.classList.remove('show');
+                }
+            }
+            };
+            
+            window.addEventListener('scroll', reveal);
+            reveal();
+                    </script>
         
     </body>
 </html>
