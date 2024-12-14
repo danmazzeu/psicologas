@@ -1,6 +1,6 @@
-const titleName = 'Andreza Gaspar';
-const phone = '+55' + '16997221147';
-const instagram = 'psicologa.andrezagaspar';
+const titleName = 'Bianca Macedo';
+const phone = '+55' + '16997989601';
+const instagram = '';
 const message = 'Olá, gostaria de agendar uma avaliação.';
 const wpplinks = document.querySelectorAll('a.whatsapp');
 const instalinks = document.querySelectorAll('a.instagram');
