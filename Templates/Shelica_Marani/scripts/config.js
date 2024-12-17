@@ -1,5 +1,5 @@
 // Variables
-const titleName = 'Shélica Marani';
+const titleName = 'Marcella Naglis';
 const crpNumber = 'CRP ' + '00/000000';
 const linkedin = '';
 const whatsapp = '+55' + '11111111111';
